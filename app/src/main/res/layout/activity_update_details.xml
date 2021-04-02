@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateDetails">
+
+    <TextView
+        android:id="@+id/listUpdate"
+        android:layout_width="335dp"
+        android:layout_height="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <EditText
+        android:id="@+id/titleUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listUpdate" />
+
+    <EditText
+        android:id="@+id/dateUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Expiery Date"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleUpdate" />
+
+    <ImageView
+        android:id="@+id/calenderUpdate"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="488dp"
+        android:src="@drawable/calendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/dateUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/titleUpdate"
+        app:layout_constraintVertical_bias="0.196"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/descUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="description"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateUpdate" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="331dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="108dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateUpdate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
